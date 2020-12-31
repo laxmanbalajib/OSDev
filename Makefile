@@ -5,7 +5,7 @@ LD_OPTIONS = -melf_i386
 obj = loader.o kernel.o
 
 %.o : %.cpp
-	g++ $(GCC_OPTIONS) -o $@ -c $<
+	g++ $(GPP_OPTIONS) -o $@ -c $<
 
 %.o : %.s
 	as $(AS_OPTIONS) -o $@ -c $<

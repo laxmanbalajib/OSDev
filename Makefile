@@ -1,5 +1,5 @@
-GPP_OPTIONS = -m32
-AS_OPTIONS = -m32
+GPP_OPTIONS = -m32 -fno-use-cxa-atexit -nostdlib -fno-builtin -fno-rtti -fno-exceptions -fno-leading-underscore
+AS_OPTIONS = --m32
 LD_OPTIONS = -melf_i386
 
 obj = loader.o kernel.o
